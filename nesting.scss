@@ -1,0 +1,22 @@
+div {
+  font-size: 18px;
+
+  p {
+    color:blue;
+  }
+
+  ul {
+    color:green;
+  }
+}
+
+  /*In normal css we can write the above code by the following:
+    div p {
+      font-size: 18px;
+      color:blue;
+    }
+    div ul {
+      font-size: 18px;
+      color:green;
+    }
+    */

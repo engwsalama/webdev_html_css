@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page!</title>
+        <style>
+        div + p {
+          background-color: yellow;
+        }
+        div > p {
+            background-color: purple;
+            color: white;            
+        }
+        div + p + p {
+            background-color: red;
+            color: white;            
+        }
+            
+            
+        </style>
+    </head>
+<body>
+    <div>
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+    </div>
+
+    <p>Paragraph 3. Not in a div.</p>
+    <p>Paragraph 4. Not in a div.</p>
+
+</body>
+</html>

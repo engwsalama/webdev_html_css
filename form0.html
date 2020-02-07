@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Form</title>
+</head>
+<body>
+   <h1>Form Attributes:</h1>
+   
+       <p>Action …. Where you will send form data?</p>
+       <p>Method … the way of sending form data :</p>
+       <ul>
+           <li>GET ... form data will appear in URL , using with search engine
+           </li>
+           <li>
+              POST ... form data will not appear , using with username and password or sensitive data               
+           </li>
+       </ul>
+   
+   
+      <h3>Input tag Controllers</h3>
+      <ul>
+          <li>Textbox- email - password</li>
+          <li>Number</li>
+          <li>Radio</li>
+          <li>Checkbox</li>
+          <li>submit</li>          
+      </ul>       
+   
+    
+
+   <form id="frm-visible" action="/account.html" method="post">
+      <label for="fname">First Name</label>
+      <input type="text" name="fname">
+      <br>
+      <label for="lname">Last Name</label>
+      <input type="text" name="lname">
+      <br>
+      <label for="age">Age</label>
+      <input type="number" name="age">
+      <br>
+      <label for="password">Password</label>
+      <input type="password" name="fname">
+      <br>
+      <label for="email">Email</label>
+      <input type="email" name="email">
+      <br>
+      <label for="gender">Gender</label>
+      <input type="radio" name="gender" value="male">Male
+      <input type="radio" name="gender" value="female">Female
+      <br>
+      <label for="Color">Color</label>
+      <input type="checkbox" name="red" value="red">Red
+      <input type="checkbox" name="green" value="green">Green
+      <input type="checkbox" name="blue" value="blue">Blue
+      <br>
+      <input type="submit">
+    </form>
+    
+    
+
+
+    
+</body>
+</html>
