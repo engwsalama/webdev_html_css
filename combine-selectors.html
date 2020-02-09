@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Combining Selectors</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="combine-selectors.css" />
+    <style>
+       html body h1{
+           color: red;;
+       }
+       html body main h1{
+           color: gold;
+       }
+       .fred h1 {
+           color: olive;
+       }
+       .fred.bubbles.julian h1 {
+           color: salmon;
+       }
+    </style>
+</head>
+<body>
+    <header id="randy" class="fred ricky bubbles julian">
+        <h1>CSS Selector Chains</h1>
+    </header>
+    <main id="simon">
+        <h1>Sub Heading</h1>
+        <p><img src="cat.jpeg" alt="Cat Photo" />  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae commodi deserunt ipsum cumque molestiae magni cum sunt fuga debitis eum totam impedit, voluptatum quis quas ratione veritatis itaque voluptatem. Optio.</p>
+        <p>Reiciendis deserunt, minima sapiente est numquam. Harum assumenda autem, repellat sapiente ullam earum quae mollitia. Veniam eligendi et autem magni nesciunt soluta, iure nihil rem officia minus quod, voluptatem iste!</p>
+        <p>Laboriosam, non officia porro. Quia veritatis veniam quod nam, rem atque ad, ab eos alias numquam eius. Laboriosam sunt, qui, corporis ullam dolor consequuntur doloremque illo quia est corrupti facilis.</p>
+    </main>
+</body>
+</html>
