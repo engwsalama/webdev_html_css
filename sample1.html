@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sampel Number One</title>
+    <link rel="stylesheet" href="webdev.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Alegreya:700|Open+Sans&display=swap');
+        .container{
+            width:500;
+            height: 150px;
+            background-color:lightgreen;
+            color: black;
+            overflow: auto;
+        }
+        .container img{
+            margin: 20px;
+            float: left;
+            box-shadow: 2px 2px 4px rgba(128,255,128,0.5),-3px -2px 4px rgba(0,0,128,0.7);
+        }
+        p{
+            
+            padding: 15px;
+            margin: 5px;            
+        }
+        .header h1{
+            text-align: center;
+            box-shadow: 2px 2px 4px red, -2px -2px 4px black;
+            margin: 30px;
+        }
+        h1{
+            font-family: Alegerya,serif;
+            font-weight: 700;
+        }
+        p{
+            font-family: 'Open Sans',sans-serif;
+        }
+        .one{
+            float: left;
+            
+        }
+        .two{
+            float: right;
+        }
+        .one,.two{
+            margin: 30px;;
+        }
+        .btn{
+            background-color: olive;
+            margin: 10px;
+            padding:5px;
+        }
+        .btn p:hover{
+            font-size: 1.5rem;
+            color:white;
+            text-transform: uppercase;
+        }
+        footer{
+            margin: 25px;           
+            clear: both;
+            text-align: center;
+            font-size:1.5rem;
+            background-color:gray;
+            color:white;
+            text-shadow:2px 2px 4px rgb(100, 0, 50), -2px -2px 4px darkblue;
+        }
+        footer::after{
+            content: "😀";
+            padding-left: 1rem;
+        }
+        .one img:hover,.two img:hover{
+            width: 200px;
+            height: 200px;
+        }
+        .container p::selection{
+            background-color: yellow;
+            color: red;
+        }
+
+         
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Sample Number One</h1>
+    </div>
+    
+    <div class="container">
+        <img src="cat.jpeg" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum provident perferendis facilis libero, blanditiis voluptates optio nostrum officiis explicabo nihil quod, nesciunt autem quo dolore voluptatibus consequuntur natus nemo. Pariatur!</p>
+    </div>
+    <div class="btn">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae deserunt ex fuga numquam facilis porro eum odio doloremque modi sapiente! Delectus quos nesciunt quaerat praesentium ipsam quod vitae id facere.</p>
+    </div>
+    <div class="one">
+        <img src="cat.jpeg" alt="">
+    </div>
+    <div class="two">
+        <img src="cat.jpeg" alt="">
+    </div>
+    <footer>
+        This is the end of this sample page
+    </footer>
+
+    
+</body>
+</html>
