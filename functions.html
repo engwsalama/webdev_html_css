@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Web Page!</title>
+    <style>
+        a::after{
+            content:attr(href)
+        }
+        .main{
+            border: 2px solid red;  
+            height: 200px;
+           width: 500px;;
+            padding: 5px;
+            
+        }
+        .head{
+            background-color:rebeccapurple;
+            width:calc(80% - 0px);
+            height: calc(100% - 0px);            
+            color:white;
+            text-align: center;
+            font-size:1.5rem;
+        }        
+        .hsl{
+            border: 3px solid black;
+            padding:5px;
+            font-size:1.5rem;
+            background-color: hsl(220,50%,50%);                       
+        }
+        .hsla{
+            margin: 25px;;
+            border: 3px solid black;
+            padding:5px;
+            font-size:1.5rem;
+            background-color: hsla(220,50%,50%,0.7);                       
+        }
+    </style>
 </head>
 <body>
     <h1>CSS Functions</h1>
+<div>
+    <h2>The attr() Function</h2>
+    <p>Insert the value of the href attribute in parenthesis after each link:</p>
+    <p><a href="http://www.google.com">Visit Google </a></p>
+    <p><a href="https://www.microsoft.com">Visit Microsoft </a></p>
+</div>
+
+<h2>The calc() Function</h2>
+<div class="main">    
+        <div class="head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, doloremque!</div>
+</div>
+
+<h2>HSL function</h2>
+<div class="hsl">
+    The hsl() function define colors using the Hue-saturation-lightness model (HSL).
+    
+    HSL stands for hue, saturation, and lightness - and represents a cylindrical-coordinate representation of colors.
+</div>
+<h2>HSLA function</h2>
+<div class="hsla">
+    The hsla() function define colors using the Hue-saturation-lightness-alpha model (HSLA).HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity of the color.
+</div>
+
     
 </body>
-</html>
+</html> 
