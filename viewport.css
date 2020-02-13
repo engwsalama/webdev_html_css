@@ -1,0 +1,43 @@
+html {
+  line-height: 1.6;
+  font-family: 'Rubik', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid {
+  display: flex;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.col {
+  flex: 1;
+  padding: 1 1em;
+
+}
+
+h1 {
+  color: steelblue;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: steelblue;
+  padding: 1em 4em;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hero-img {
+  box-shadow: 3px 3px 25px 5px rgba(0, 0, 0, .5);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Web Page!</title>
+  <link rel="stylesheet" href="viewport.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Rubik:300,700');
+  
+  /* prefer to use vmin with font size */
+  /*Viewport is what you are going to see through your view such desktop , mobile , tablet ,etc.*/
+
+.hero {
+  background: linear-gradient(to left, #83a4d4 , #b6fbff);
+  padding: 5vh 0;
+
+  height: 100vh;
+}
+
+
+.hero-title {
+  font-size: 10vw;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0 0 .25em;
+}
+
+.hero-text {
+  font-size: 1.2em;
+  /*font-size: 3vw;*/
+  line-height: 1.7;
+  margin: 0 0 1.5em;
+}
+
+.more-content {
+  background: url(921-800x400.jpg);
+  background-size: cover;
+  height: 1000px;
+
+}
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="grid">
+      <div class="col">
+        <h1 class="hero-title">Using vh and vw</h1>
+        <p class="hero-text">Viewport width and height are fantastic units for this type of thing! Just make sure you test things out on mobile too, you'll probably need some media queries as there is a good chance things don't work out well on mobile!</p>
+        <a href="" class="btn">Buy now!</a>
+      </div>
+      <div class="col">
+        <img src="381-300x400.jpg" alt="" class="hero-img"/>
+      </div>
+    </div>
+  </div>
+
+<div class="more-content">
+
+</div>
+  
+</body>
+</html>
