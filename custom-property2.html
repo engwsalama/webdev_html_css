@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Web Page!</title>
+	<style>
+		/* Var() function can accept a secondary value , to be used if the varialbe is not defined*/
+		:root{
+			--main-font:Helvetica, Arial,sans-serif;
+			--brand-color:#369;
+			padding: 0
+			margin:0;
+
+		}
+		p{
+			font-family: var(--main-font,sans-serif);
+			color:var(--brand-colo,green); /* variable is not correct*/
+			padding:2vmin;
+			font-size: 5vmin;
+		}
+		.container{
+			width:100vw;
+			height: 100vh;
+			background-color: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium libero, at omnis nisi quasi itaque repellendus rem aliquid animi voluptates explicabo ratione commodi laboriosam quibusdam, saepe, sed sapiente cupiditate, vitae.</p>
+	</div>
+</body>
+</html>
