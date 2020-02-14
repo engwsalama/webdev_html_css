@@ -1,0 +1,4 @@
+.container-1 div,.container-2 div, .container-3 div{
+    border :1px solid#ccc;
+    padding: 10px;
+}

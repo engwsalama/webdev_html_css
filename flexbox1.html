@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="flexbox.css">
+  <title>My Web Page!</title>
+  <style>
+    /* 
+    1- make container-2.box width27%
+    2- add flex to .container-2
+    3- for flex items in container 2 will justify-content to adjust the margine,: flex-start,flex-end,center, space-between;
+    4- to work with width with flex , use flex-bais instead of width
+
+    */
+    .container-1{
+      display: flex;
+      align-items:center;
+      flex-direction: row-reverse;
+    }
+    .container-2{
+        display: flex;
+        /* justify-content: flex-start; */
+        justify-content: flex-end;
+        justify-content: center;
+        justify-content: space-between;
+
+    }
+     
+
+    .container-2-box{
+        flex-basis: 27%;
+    }
+  </style>
+ 
+</head>
+<body> 
+    <div class="container-1">
+        <div class="box-1">
+          <h3>Box One</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="box-2">
+          <h3>Box Two</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="box-3">
+          <h3>Box Three</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+        
+      <div class="container-2">
+        <div class="container-2-box">
+          <h3>Box Four</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+        </div>
+        <div class="container-2-box">
+          <h3>Box Five</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+        </div>
+        <div class="container-2-box">
+          <h3>Box Six</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+        </div>
+      </div>
+      
+
+
+
+
+
+  
+</body>
+</html>

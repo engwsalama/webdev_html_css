@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="absolute-relative.css">
+    <title>My Web Page!</title>
+    <style>
+        /*
+        1- absolute child
+        2- child corners
+        3- relative parent
+        4- remove relative parent
+        5- relative parent p  and use z-index
+        */
+        .parent{           
+
+        }
+
+        .child{
+            position:absolute;        
+            width: 50px;
+            height: 50px;;          
+          
+        }
+         p{
+            z-index: 1;            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>A line of text</p>
+        <div class="child"></div>
+        <p>More text :D</p>
+      </div>    
+</body>
+</html>

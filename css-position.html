@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Position</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css-position.css"/>
+   
+    <style>
+        /*
+        position: static|absolute|relative|fixed|sticky
+        Static : is the default;*/
+        
+        /*
+        relative: prepare the itme to be moved related to itself
+        */
+        .box:nth-child(2){
+               position: relative;
+               top:10px;
+               left:20px;
+           }
+
+        /*
+        - Absolute: the content immediately becomes wrapped, so the box shrinks down to contains only its content
+        - you will lose any reference to anything else 
+        - When you start put 4 corners measurments , the reference will be the top corner of the page 
+
+        */
+        .box:nth-child(3){
+               position: absolute;
+               top:50px; /* from top screen*/
+               right:200px; /* from left screen*/
+               bottom:50px; /* from left screen*/
+               left:200px; /* from left screen*/
+           }
+        
+        /* fix it works the same way as absolute so you lose your size and reference
+        - the difference between fixed and absolute , fixed maintain its position relattive the corner , but absolute is scrolling with the page
+
+        */
+        .box:nth-child(4){
+            position: fixed;
+            top:50px;
+            left:50px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Position</h1>
+    </header>
+    <main>
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+    </main>  
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sticky Footers</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="sticky-footer.css">
+    <style>
+        /*
+        with the oldest way
+        1- add p*5>lorem
+        2- remove additional p
+        2- relative body
+        3- absolute footer ,with button=0 and width=100vw
+        4- add p*5>lorem
+        5- footer will cover the last p
+        6- make footer height:4rem;
+        7- add in main padding-bottom:4rem (1 for p and 4 for footer)
+        */
+        body{
+            position:relative;
+        }
+        footer{
+            position:absolute;
+            bottom:0;
+            width:100vw;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sticky Footers</h1>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, magnam officiis inventore. Provident quam reiciendis esse cupiditate! Tenetur sapiente asperiores voluptatem voluptatum explicabo molestias, praesentium ad! Suscipit delectus molestias commodi.</p>
+        <p>Earum debitis ea doloremque ut, expedita praesentium sed architecto iusto eveniet eaque fugit illum labore vero ullam pariatur, libero et, dolor unde iste aut inventore. Ut vero illum debitis perferendis.</p>
+        <p>Mollitia provident esse, doloribus sed quisquam quaerat tenetur, eius rerum pariatur eaque nulla, optio hic illo ducimus earum placeat magnam quam. Tenetur ducimus a excepturi accusantium, quisquam exercitationem sed ullam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam est inventore temporibus praesentium porro quo ex fuga sint ea. Beatae, minus aperiam est laborum culpa non distinctio repellat vitae. Unde.</p>
+        <p>Harum hic voluptates quibusdam vero aliquam fuga excepturi recusandae soluta architecto nesciunt eaque placeat unde eveniet, quidem est nisi porro et animi. Voluptates repellat veritatis odit blanditiis, repudiandae ad enim.</p>
+        <p>Esse vero, voluptas at nostrum eligendi earum doloremque necessitatibus dolores ipsum quaerat molestias explicabo repudiandae nam labore itaque voluptate iusto provident distinctio accusamus illo, totam blanditiis delectus. Cupiditate, at obcaecati.</p>
+        <p>Nisi, eligendi. Quasi aut tenetur deleniti, fugit consectetur magnam omnis voluptatem, porro perspiciatis explicabo voluptatibus? Eveniet, rem eligendi voluptatibus libero voluptatem molestias aliquam, laborum fugit voluptas quas rerum. Hic, dignissimos.</p>
+        <p>Quas, recusandae velit maiores non laborum labore nobis ipsum cum similique rem dolores molestias cupiditate doloribus aperiam eius! Itaque, placeat autem? Doloribus assumenda animi officiis cum officia provident nemo pariatur!</p>
+       
+        
+    </main>    
+    <footer>
+        <p>&copy; 2018 Squid Inc.</p>
+    </footer>
+</body>
+</html>
