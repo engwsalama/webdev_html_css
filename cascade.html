@@ -5,8 +5,50 @@
     <title>The C in CSS means Cascade</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="cascade.css">
-        <style>      
-              
+        <style>
+/*            there are some elements have their default style could not be changed unless using !Important
+            */
+            main p{
+/* note that the a link color will not change becasue , it has its default color*/
+                color:gold;             
+            }
+            p{
+/*    the p color will not change unless you use !important*/
+                color:rebeccapurple !important;
+            }
+/*specifity 
+    1- IDs
+    2- Classes & Pseudo-classes
+    3- Elements & Pseudo-elements
+examples:
+            .red .big p.one.two span{}
+                the specificty number is 0.4.2
+            #simon p.first{}
+                the specifcity number is 1.1.1
+            main span {}
+                0.0.2
+            main p span{}
+                0.0.3
+            the bigest number will be applied
+            if two numbers are equal the nearest style to the elemenet wil be applied (this called source order)
+
+*/
+            body main p {
+                color:green;
+            }
+            
+            main a {
+                color: olive
+            }
+            body main p{
+                color:gold;
+            }
+            main a span{
+                color:pink;
+            }
+            main p a{
+                color:olive;
+            }  
     </style>
 </head>
 <body>

@@ -9,7 +9,41 @@
             color: cornflowerblue
         }
       /* Pseudo classes*/
+        p:hover{
+            color:red;
+            font-weight: bold;
+        }
+        input:required {
+            border:2px solid #333;
+        }
+        input:optional{
+            margin: 2rem;
+        }
+        input:checked{
+            margin: 4rem;
+            background-color: red;
+        }
+        p:last-of-type{
+            font-size: 2rem;
+            color:green;
+        }
       /* Pseudo elements*/
+        p::after{
+                content:"new text";
+                padding-left: 1rem;
+        }
+        p::first-line{
+            color: black;
+        }
+        p::first-letter{
+            font-size:3rem;
+        }
+        p::selection{
+            background-color: gold;
+            color:red;
+        }
+    
+        
      
     </style>
 </head>

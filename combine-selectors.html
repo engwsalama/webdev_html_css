@@ -12,12 +12,24 @@
        html body main h1{
            color: gold;
        }
+        
        .fred h1 {
            color: olive;
        }
        .fred.bubbles.julian h1 {
            color: salmon;
        }
+        .ricky .bubbles .julian h1{
+/*            here will not apply because this means each class inside the other*/
+            color:salmon;
+        }
+        .ricky.bubbles.julian h1{
+/*            here means h1 element has all these classes  in the same level as below*/
+            color:green;
+        }
+        
+        
+        
     </style>
 </head>
 <body>

@@ -6,6 +6,42 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="nth-child.css">
     <style>
+        /* you use this method in case of there are no ID or Class
+        the used equation is (an+b)
+        a: any integer number
+        n: integer number starts with 1
+        b: integer number represent the strating number (starting at position b)
+        */
+        ul li:first-child{
+            color:red;
+        }
+        ul li:last-child{
+            color:green;
+        }
+        li:nth-child(2n){
+            color:gold;
+        }
+        li:nth-child(2n+1){
+            color:blue;
+        }
+        li:nth-child(odd){
+            background-color: olive;
+        }
+        
+        .main p:first-of-type{
+        /*  if you want to change the font of first p in the .main div */
+            font-size: 2rem;
+        }
+        .main p:nth-child(n){
+/*            change all Ps*/
+            font-size: 3rem;
+        }
+        .main :nth-child(2){
+    /*  every second child in the .main*/
+            background-color: gray;
+        }
+        
+        
   
         
     </style>
